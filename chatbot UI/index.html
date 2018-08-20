@@ -1,0 +1,91 @@
+<!-- Made By coolnik -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Web - Chatbot</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+<body>
+	<div class="static-bg">
+	</div>
+
+	<div id="login" class="login hide fade in">
+		<div class="login-row">
+			<form class="login-form">
+				<span class="close">X</span>
+				<center><h2>Student Login</h2></center>
+				<input type="text" name="username" placeholder="Username">
+				<input type="password" name="password" placeholder="Password">
+				<center><button type="submit">Login</button></center>
+				<center><p>Don't have account? </p><a id="linking-register" href="#register">Click here..</a></center>
+			</form>
+		</div>
+	</div>
+
+	<div id="register" class="register hide fade in">
+		<div class="register-row">
+			<form class="register-form">
+				<span class="close-register">X</span>
+				<center>
+					<h2>Student Registration</h2>
+				</center>
+				<input type="text" name="grno" placeholder="GR No">
+				<select id="enroll">
+					<option>Select enroll..</option>
+				</select>
+				<select id="year">
+					<option>Select year..</option>
+				</select>
+				<input type="text" name="username" placeholder="Set Username">
+				<input type="password" name="password1" placeholder="Set Password">
+				<input type="password" name="password2" placeholder="Set Password again">
+				<center>
+					<button type="submit">Register</button>
+				</center>
+				<center><p>Already have account? </p><a id="linking-login" href="#login">Click here..</a></center>
+			</form>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row nav-grid">
+			<div class="logo">
+				<a href="#"><h2>MyBot</h2></a>
+			</div>
+			<div class="register-trigger">
+				<h2>Register</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="space"></div>
+			<div class="intro">
+				<h2>Find your answers!</h2>
+				<button class="trigger-search">Start</button>
+			</div>
+		</div>
+	</div>
+
+	<span class="author">coolnik</span>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
+<!--
+
+	<div class="container">
+		<div class="logo">
+			<h2>MyBot</h2>
+		</div>
+		<div class="query-input">
+			<form onsubmit="search();">
+				<input type="text" name="query">
+				<input type="submit" name="submit-query" value="Search">
+			</form>
+		</div>
+	</div>
+onclick="javascript:window.open('login.html');"
+-->
